@@ -1,0 +1,163 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    background-color: $veryLightGray; 
+
+}
+//*wild card and before after pseudo element
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-family: $handwriting;
+    font-size: 3rem;
+    padding-top: 5rem;
+    padding-right: 3rem;
+    padding-bottom: 0;
+    padding-left: 3rem;
+    margin: 2rem 2.5rem 2.5rem 2.5rem;   
+}
+
+.socials {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+
+    a:not(:last-child){
+        margin-right: 1rem;
+    }
+
+}
+
+.banner {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 10rem;
+    height: 2.5rem;
+    font-family: $roboto;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+
+    &.about {
+    margin-left: 10rem;
+    }
+
+    &.work {
+    margin-left: 10rem;
+    //margin-left: 80rem;
+    }
+}
+
+.scroll {
+    font-family: $handwriting;
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+
+.aboutMe {
+    text-align: right;
+    flex-wrap: nowrap;
+    margin-right: 3rem;
+    margin-left: 6rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+    color: black;  
+    background-color:$veryLightGray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.grid {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $roboto;
+    font-size: $font-bigger;
+    color: $grayishBlue;
+    line-height: 1.3;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none; 
+    color: $grayishBlue;
+}
+
+img {
+    width: 24rem;
+    height: 18rem;
+    margin-left: 5rem;
+}
+
+.chineseName {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: black;
+}
+
+.englishName {
+    font-family: 'Sansita', sans-serif;
+    color: black;
+    }
+
+//flexbox style
+.flex {
+   display: flex; 
+
+   &-jc-sb{
+      justify-content: space-between; 
+   }
+
+    &-jc-c{
+    justify-content: center; 
+   } 
+
+   &-ai-c{
+    align-items: center; 
+} 
+}
+
+//Buttons
+button, .button { 
+    padding: 0.875rem 2.1875rem; 
+    background: linear-gradient(to right, $limeGreen, $brightCyan);
+    border-radius: 50px; 
+    border: 0;
+    cursor: pointer; 
+    color: white !important;
+    font-weight: 400;
+}
+
+//Visibility
+.hide-for-mobile {
+  //hide for tablet and mobile devices  
+    @include breakpoint-down(small){
+        display: none;
+    }
+}
+
+
+.hide-for-desktop {
+    //hide for desktop viewport widths
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
