@@ -1,0 +1,328 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: black;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 3rem;
+  padding-top: 9rem;
+  padding-right: 3rem;
+  padding-bottom: 0rem;
+  padding-left: 3rem;
+  margin: 2rem 2.5rem 2.5rem 2.5rem;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.scroll {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 2rem;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 9rem;
+  padding-bottom: 6rem;
+}
+
+hr.dashed {
+  border-top: 3px dashed black;
+}
+
+.aboutSection {
+  position: relative;
+}
+
+/*figure out relative positioning*/
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 10rem;
+  height: 2.5rem;
+  font-family: 'Sansita', sans-serif;
+  background-color: #292828;
+  color: #fafafa;
+  border-radius: 5px;
+}
+
+.banner.about {
+  position: absolute;
+  top: 0.05rem;
+  margin-left: 9rem;
+}
+
+.banner.work {
+  top: 0.05rem;
+  margin-left: 9rem;
+}
+
+.aboutMe {
+  text-align: left;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-right: 3rem;
+  margin-left: 9rem;
+  padding-top: 9rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  padding-bottom: 6rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+mark.red {
+  color: red;
+  background: none;
+}
+
+mark.orange {
+  color: #ff8400;
+  background: none;
+}
+
+mark.orangered {
+  color: orangered;
+  background: none;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: #9698a6;
+  line-height: 1.3;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: #9698a6;
+}
+
+/*Want to add round background to memoji*/
+img {
+  width: 16rem;
+  height: 15rem;
+  margin-left: 6rem;
+  margin-top: 9rem;
+  background-color: burlywood;
+  border-radius: 10rem;
+}
+
+.chineseName {
+  font-family: 'Liu Jian Mao Cao', cursive;
+  color: black;
+}
+
+.englishName {
+  font-family: 'Sansita', sans-serif;
+  color: black;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button, .button {
+  padding: 0.875rem 2.1875rem;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  color: white !important;
+  font-weight: 400;
+}
+
+@media (max-width: 39.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.christmas {
+  background-color: red;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.header {
+  background-color: #fafafa;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header.active {
+  /*make it only show when scroll*/
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.header nav {
+  height: 5rem;
+  padding: 0.1rem 0.1rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.header__menu > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: 3px 1px;
+          transform-origin: 3px 1px;
+}
+
+.header__menu > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__menu.open > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__menu.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu.open > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header__links a {
+  position: relative;
+  font-size: 1.125rem;
+  color: #696868;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(black));
+  background: linear-gradient(to right, black, black);
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__links a:hover {
+  color: #2d314d;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
+}
+
+.header__cta {
+  font-size: 0.875rem;
+  color: white;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.footer {
+  height: 5rem;
+  margin-bottom: 0rem;
+}
+/*# sourceMappingURL=style.css.map */
