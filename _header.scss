@@ -1,7 +1,6 @@
 .header {
 
     background-color:$veryLightGray;
-
     position: fixed;
     top: 0;
     width: 100%;
@@ -10,16 +9,54 @@
     &.active {
         /*make it only show when scroll*/
     box-shadow: 0 0 3px rgba(0,0,0, 0.2);
-
     }
-
 
     nav {
+        //padding-top: 0.025rem;
+        padding-bottom: 1.0625rem;
+    }
+
+    /*nav {
        height: 5rem;
-       padding: 0.1rem 0.1rem;
        margin-left: 2.5rem;
        margin-right: 2.5rem;
-    }
+    }*/
+
+    &.open {
+
+        .overlay {
+               display: block;
+               animation: fade-in 300ms ease-in-out forwards;
+           }
+
+
+
+       .header__toggle {
+           > span:first-child {
+               transform: rotate(45deg);
+           }
+
+           > span:nth-child(2) {
+               opacity: 0;
+           }
+
+           > span:last-child {
+               transform: rotate(-45deg);
+           }
+       }
+      }
+
+   .overlay {
+       position: fixed;
+       top: 3.75rem;
+       bottom: 0px;
+       left: 0px;
+       right: 0px;
+       //background-color: red;;
+       background:linear-gradient($veryLightGray, transparent);
+
+   }
+
 
     //mobile menu
     &__toggle {
@@ -36,32 +73,18 @@
             margin-bottom: 5px;
         }
         }
-
-        &.open {
-
-            > span:first-child {
-                transform: rotate(45deg);
-            }
-
-            > span:nth-child(2) {
-                opacity: 0;
-            }
-
-            > span:last-child {
-                transform: rotate(-45deg);
-            }
-
-       }
     }
 
-      //mobile menu
-
+    //mobile menu block
     &__menu {
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
         background: $veryLightGray;
         border: 3px dashed black;
         padding: 1.625rem;
-        margin-left: 0.625rem;
-        margin-right: 0.625rem;
+        border-radius: 3px;
 
             a {
                 color: black;
@@ -106,6 +129,8 @@
             }
             }
        }
+
+
 
     //visibility
     .hide-for-mobile {

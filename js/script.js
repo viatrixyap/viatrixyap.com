@@ -1,19 +1,30 @@
 const btnHamburger = document.querySelector('#btnHamburger');
+const header = document.querySelector('.header');
+const overlay = document.querySelector('.overlay');
+const fadeElems = document.querySelectorAll('.has-fade');
 
 btnHamburger.addEventListener('click', function(){
     console.log('click hamburger');
 
-    if(btnHamburger.classList.contains('open')){
-        btnHamburger.classList.remove('open');
+    if(header.classList.contains('open')){ //close hamburger menu
+        header.classList.remove('open');
+        fadeElems.forEach(function(element){
+            element.classList.remove('fade-in');
+            element.classList.add('fade-out');
+        });
     }
 
-    else {
-        btnHamburger.classList.add('open');
+    else { //open hamburger menu
+        header.classList.add('open');
+        fadeElems.forEach(function(element){
+            element.classList.remove('fade-out');
+            element.classList.add('fade-in');
+        });
     }
 });
 
 
-/*$(window).scroll(function() {     
+/*$(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if(scroll > 0){
         headerScroll.classList.add('active');
@@ -40,4 +51,3 @@ btnHamburger.addEventListener('click', function(){
           header.classList.remove("active");
         }
       });
-    
