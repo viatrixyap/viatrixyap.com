@@ -2,28 +2,28 @@
 
     background-color:$veryLightGray;
 
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 999;
 
     &.active {
         /*make it only show when scroll*/
     box-shadow: 0 0 3px rgba(0,0,0, 0.2);
-    
+
     }
-    
+
 
     nav {
        height: 5rem;
-       padding: 0.1rem 0.1rem; 
-       margin-left: 2.5rem; 
+       padding: 0.1rem 0.1rem;
+       margin-left: 2.5rem;
        margin-right: 2.5rem;
     }
-    
 
-    &__menu { //mobile menu
-        
+    //mobile menu
+    &__toggle {
+
         > span {
             display: block;
             width: 26px;
@@ -44,20 +44,39 @@
             }
 
             > span:nth-child(2) {
-                opacity: 0; 
+                opacity: 0;
             }
 
             > span:last-child {
                 transform: rotate(-45deg);
             }
-        }
+
+       }
+    }
+
+      //mobile menu
+
+    &__menu {
+        background: $veryLightGray;
+        border: 3px dashed black;
+        padding: 1.625rem;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+
+            a {
+                color: black;
+                padding: 0.625rem;
+                display: block;
+                text-align: center;
+            }
        }
 
+    //desktop menu
 
        &__links {
-        
+
         a {
-            position: relative; 
+            position: relative;
             font-size: $font-med;
             color: $gray;
             transition: color 300ms ease-in-out;
@@ -70,10 +89,10 @@
                content: "";
                display: block;
                position: absolute;
-               height: 5px; 
-               left: 0; 
-               right: 0; 
-               bottom: -30px; 
+               height: 5px;
+               left: 0;
+               right: 0;
+               bottom: -30px;
                background: linear-gradient(to right, black, black);
                opacity: 0;
                transition: opacity 300ms ease-in-out;
@@ -85,14 +104,17 @@
                     opacity: 1;
                 }
             }
-        }
+            }
        }
 
-       &__cta {
-           font-size: $font-small;
-           color: white;
-            transition: opacity 300ms ease-in-out;
-       }
-}
+    //visibility
+    .hide-for-mobile {
+        //hide for tablet and mobile
+    }
+
+    .hide-for-desktop {
+        //hide for desktop viewport widths
+    }
 
 
+    }

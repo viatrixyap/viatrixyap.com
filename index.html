@@ -25,20 +25,32 @@
   <header class='header'>
     <nav class='flex flex-ai-c flex-jc-sb'>
         <h1 class='englishName'> VIATRIX YAP <span class='chineseName'>叶斐文 </span></h1>
-      <a id='btnHamburger' href='#' class='header__menu hide-for-desktop'>
+
+      <!--mobile menu-->
+      <a id='btnHamburger' href='#' class='header__toggle hide-for-desktop'>
         <span></span>
         <span></span>
         <span></span>
        </a>
 
+       <!--desktop menu-->
        <div class='header__links hide-for-mobile'>
-         <a href="https://viatrixyap.com">Home</a><a href="#">About</a><a href="#">Work</a><a href="#">Blog</a></a>
+         <a href="#home">Home</a>
+         <a href="#aboutMe">About</a>
+         <a href="#work">Work</a>
+         <a href="#">Blog</a>
         </div>
      </nav>
+
+     <!--mobile menu open-->
+     <div class='header__menu hide-for-desktop'>
+      <a href="#home">Home</a><a href="#aboutMe">About</a><a href="#work">Work</a><a href="#">Blog</a></a>
+     </div>
+
  </header>
 
 
-<div class='intro'>
+<div id="home" class='intro'>
   "Trix is a full-time planner/strategist in the energy industry who codes and writes in bed at midnight.<br>Here you will find some of her web development work and writings," says the narrator who is just Trix with a different voice.
 </div>
 
@@ -62,7 +74,7 @@
 
 <hr class="dashed">
 
-<div id=parent class=aboutSection>
+<div id=aboutMe class=aboutSection>
 <div class='banner about'>
   <div>About</div>
 </div>
@@ -85,25 +97,18 @@
 
 <hr class='dashed'>
 
+<div id="work" class=workSection>
 <div class='banner work'>
   <div>Work</div>
 </div>
-
+</div>
 
 <section>
 
   <div class="footer">
 
-    You can also find me here
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum turpis nibh, aliquam sagittis sapien mollis ut. Vivamus consectetur venenatis nibh in condimentum. Nunc molestie, mi eget tristique condimentum, elit ligula sagittis libero, ut dapibus tellus metus vel turpis. Integer sed bibendum felis. Ut dictum neque nec auctor facilisis. Donec vel egestas est. Nullam commodo, magna vel egestas suscipit, nibh ipsum commodo sapien, in hendrerit ligula ante ac lacus. Duis id massa ac arcu porttitor consequat. Sed aliquet turpis ac nulla lacinia ullamcorper. Pellentesque lobortis vel dolor a mattis. Sed dapibus lacinia nisi, a volutpat eros mollis sit amet. Maecenas posuere metus sed suscipit interdum. Cras nec rhoncus nisl.
+    columns
 
-Vivamus sit amet elit ac nisl pretium maximus vitae et eros. Proin tempus felis ac lectus vulputate sollicitudin. Phasellus nec viverra tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum placerat elit, eu imperdiet velit convallis eu. Quisque mauris purus, dignissim ac sapien eget, dapibus iaculis tortor. Duis hendrerit risus urna, id pretium enim volutpat ac. Sed eget ante vestibulum, sollicitudin odio vitae, luctus sem. Suspendisse semper purus est, eu auctor nisl sollicitudin lobortis.
-
-Sed scelerisque elit lacus, eu pulvinar ante elementum quis. Quisque lobortis, neque sed suscipit vestibulum, est sem bibendum mi, quis blandit diam lorem non urna. Integer imperdiet sagittis nunc, eu ultrices enim aliquet sed. Nunc accumsan ullamcorper ex vel aliquet. Quisque facilisis tempor libero sed efficitur. Curabitur tempor diam vitae nisl ornare, ut facilisis purus rutrum. Donec congue lacus diam, ut tempor massa auctor sit amet. Proin nec rutrum nisl, eget pharetra erat. Nam mattis leo sed elit pharetra tristique.
-
-Etiam gravida posuere nisl vel eleifend. Nullam at ligula pretium, fringilla lacus fermentum, hendrerit odio. Cras pulvinar tempor sollicitudin. Ut porttitor in elit ac facilisis. Nulla auctor magna cursus scelerisque ornare. Cras ut ex in leo condimentum porta. Vestibulum id fringilla leo. In vitae nisi quis risus ornare tempus. Phasellus auctor molestie dolor, sed ultricies mi suscipit vulputate. Duis tincidunt suscipit risus, quis egestas lacus semper ut. Nunc pulvinar libero vitae dolor tempus, at aliquet ante cursus. Pellentesque id nibh mollis, sollicitudin orci eu, ultrices lacus. Nunc ex mi, convallis eu commodo nec, ultrices ut lectus.
-
-Integer turpis ex, luctus et ornare a, faucibus sed nisl. Nunc tellus purus, tempus eu purus vel, hendrerit dictum massa. Donec in libero ut elit ultrices tincidunt sed sed elit. Mauris tincidunt pretium libero, ac auctor nibh euismod varius. Maecenas eget porta dui. Nunc accumsan vehicula tellus vitae lacinia. Ut volutpat vulputate pharetra. Aenean sed porttitor urna. Sed hendrerit scelerisque elit, sit amet dapibus erat. Nullam rhoncus eu ipsum vel pharetra.
   </div>
 
 
