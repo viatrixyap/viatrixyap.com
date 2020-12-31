@@ -14,6 +14,8 @@
     nav {
         //padding-top: 0.025rem;
         padding-bottom: 1.0625rem;
+        position: relative;
+        background-color: $veryLightGray;
     }
 
     /*nav {
@@ -48,7 +50,7 @@
 
    .overlay {
        position: fixed;
-       top: 3.75rem;
+       top: 0px;
        bottom: 0px;
        left: 0px;
        right: 0px;
@@ -80,7 +82,7 @@
         position: absolute;
         width: calc(100% - 3rem);
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateY(10%);
         background: $veryLightGray;
         border: 3px dashed black;
         padding: 1.625rem;
@@ -135,10 +137,16 @@
     //visibility
     .hide-for-mobile {
         //hide for tablet and mobile
+       @include breakpoint-down(medium){
+           display: none;
+       }
     }
 
     .hide-for-desktop {
         //hide for desktop viewport widths
+        @include breakpoint-up(large){
+            display: none;
+        }
     }
 
 
