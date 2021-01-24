@@ -170,47 +170,13 @@ hr.dashed {
 .banner.about {
   position: absolute;
   top: 0.05rem;
-  margin-left: 9rem;
+  margin-left: 12rem;
+  margin-right: 6rem;
 }
 
 .banner.work {
   top: 0.05rem;
-  margin-left: 9rem;
-}
-
-.aboutMe {
-  text-align: left;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin-right: 3rem;
-  margin-left: 9rem;
-  padding-top: 9rem;
-  padding-left: 3rem;
-  padding-right: 1rem;
-  padding-bottom: 6rem;
-  color: black;
-  font-family: "Roboto", sans-serif;
-}
-
-mark.red {
-  color: red;
-  background: none;
-}
-
-mark.orange {
-  color: #ff8400;
-  background: none;
-}
-
-mark.orangered {
-  color: orangered;
-  background: none;
-}
-
-.grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-left: 15rem;
 }
 
 body {
@@ -229,16 +195,6 @@ body.noScroll {
 a, a:visited, a:hover {
   text-decoration: none;
   color: #9698a6;
-}
-
-/*Want to add round background to memoji*/
-img {
-  width: 16rem;
-  height: 15rem;
-  margin-left: 6rem;
-  margin-top: 9rem;
-  background-color: burlywood;
-  border-radius: 10rem;
 }
 
 .chineseName {
@@ -421,8 +377,8 @@ h2 {
   left: 0;
   right: 0;
   bottom: -30px;
-  background: -webkit-gradient(linear, left top, right top, from(black), to(black));
-  background: linear-gradient(to right, black, black);
+  background: -webkit-gradient(linear, left top, right top, from(red), to(red));
+  background: linear-gradient(to right, red, red);
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -446,5 +402,117 @@ h2 {
   .header .hide-for-desktop {
     display: none;
   }
+}
+
+.aboutGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+  .aboutGrid {
+    -ms-grid-columns: 25% 75%;
+        grid-template-columns: 25% 75%;
+  }
+}
+
+@media (min-width: 64em) {
+  .aboutGrid {
+    -ms-grid-columns: 25% 75%;
+        grid-template-columns: 25% 75%;
+  }
+}
+
+.aboutMe {
+  text-align: justify;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-right: 6rem;
+  margin-left: 6rem;
+  padding-top: 9rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 64em) {
+  .aboutMe {
+    padding-top: 9rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.aboutImg {
+  height: 5rem;
+  width: 5rem;
+  margin-left: 6rem;
+  margin-top: 9rem;
+  margin-bottom: 6rem;
+  border-radius: 10rem;
+}
+
+#circleOne {
+  background: #f00;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-transform: translate(8rem, -20rem);
+          transform: translate(8rem, -20rem);
+  z-index: -100;
+}
+
+#circleTwo {
+  background: orange;
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  margin-left: 6rem;
+  -webkit-transform: translate(-9rem, -13rem);
+          transform: translate(-9rem, -13rem);
+  z-index: -1;
+}
+
+#circleThree {
+  background: burlywood;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 6rem;
+  -webkit-transform: translate(-6rem, -20rem);
+          transform: translate(-6rem, -20rem);
+  z-index: -100;
+}
+
+#circleFour {
+  background: burlywood;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 5rem;
+  -webkit-transform: translate(12rem, -5rem);
+          transform: translate(12rem, -5rem);
+  z-index: -100;
+}
+
+mark.red {
+  color: red;
+  background: none;
+}
+
+mark.orange {
+  color: #ff8400;
+  background: none;
+}
+
+mark.orangered {
+  color: orangered;
+  background: none;
 }
 /*# sourceMappingURL=style.css.map */

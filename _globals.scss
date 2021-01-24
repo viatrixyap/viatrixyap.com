@@ -73,49 +73,17 @@ hr.dashed {
 .banner.about {
     position: absolute;
     top: 0.05rem;
-    margin-left: 9rem;
+    margin-left: 12rem;
+    margin-right: 6rem;
 
   }
 
   .banner.work {
     top: 0.05rem;
-    margin-left: 9rem;
+    margin-left: 15rem;
 
 }
 
-.aboutMe {
-    text-align: left;
-    flex-wrap: nowrap;
-    margin-right: 3rem;
-    margin-left: 9rem;
-    padding-top: 9rem;
-    padding-left: 3rem;
-    padding-right: 1rem;
-    padding-bottom: 6rem;
-    color: black;
-    //color: $veryLightGray;
-    //background-color: rgb(41, 40, 40);
-    font-family: "Roboto", sans-serif;
-
-}
-
-mark.red {
-    color: red;
-    background: none;
-}
-
-mark.orange {
-    color: rgb(255, 132, 0);
-    background: none;
-}
-
-mark.orangered {
-    color: orangered;
-    background: none;
-}
-.grid {
-    display: flex;
-}
 
 body {
     margin: 0;
@@ -135,15 +103,6 @@ a, a:visited, a:hover {
     color: $grayishBlue;
 }
 
-/*Want to add round background to memoji*/
-img {
-    width: 16rem;
-    height: 15rem;
-    margin-left: 6rem;
-    margin-top: 9rem;
-    background-color: burlywood;
-    border-radius: 10rem;
-}
 
 .chineseName {
     font-family: 'Liu Jian Mao Cao', cursive;
