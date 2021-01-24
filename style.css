@@ -170,8 +170,8 @@ hr.dashed {
 .banner.about {
   position: absolute;
   top: 0.05rem;
-  margin-left: 12rem;
-  margin-right: 6rem;
+  margin-left: 6rem;
+  margin-right: 0rem;
 }
 
 .banner.work {
@@ -429,8 +429,8 @@ h2 {
   text-align: justify;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-right: 6rem;
-  margin-left: 6rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
   padding-top: 9rem;
   color: black;
   font-family: "Roboto", sans-serif;
@@ -448,7 +448,8 @@ h2 {
 .aboutImg {
   height: 5rem;
   width: 5rem;
-  margin-left: 6rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
   margin-top: 9rem;
   margin-bottom: 6rem;
   border-radius: 10rem;
@@ -495,7 +496,7 @@ h2 {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin-left: 5rem;
+  margin-left: 0rem;
   -webkit-transform: translate(12rem, -5rem);
           transform: translate(12rem, -5rem);
   z-index: -100;

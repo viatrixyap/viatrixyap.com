@@ -22,8 +22,8 @@
 
     text-align:justify;
     flex-wrap: nowrap;
-    margin-right: 6rem;
-    margin-left: 6rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
     padding-top: 9rem;
 
     //deskstop
@@ -42,7 +42,8 @@
 .aboutImg {
     height: 5rem;
     width: 5rem;
-    margin-left: 6rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
     margin-top: 9rem;
     margin-bottom: 6rem;
     border-radius: 10rem;
@@ -86,7 +87,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-left: 5rem;
+    margin-left: 0rem;
     transform: translate(12rem, -5rem);
     z-index: -100;
 }
