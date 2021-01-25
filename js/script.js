@@ -26,6 +26,8 @@ btnHamburger.addEventListener('click', function(){
     }
 });
 
+//add click background to make mobile menu disappear
+
 
 /*$(window).scroll(function() {
     var scroll = $(window).scrollTop();

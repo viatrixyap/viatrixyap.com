@@ -73,14 +73,24 @@ hr.dashed {
 .banner.about {
     position: absolute;
     top: 0.05rem;
-    margin-left: 6rem;
+    margin-left: 7.5rem;
     margin-right: 0rem;
+      //tablet
+      @include breakpoint-up(medium){
+        margin-left: 12rem;
+    }
+
+    //deskstop
+    @include breakpoint-up(large){
+        margin-left: 15rem;
+    }
+
 
   }
 
   .banner.work {
     top: 0.05rem;
-    margin-left: 15rem;
+    margin-left: 7.5rem;
 
 }
 
